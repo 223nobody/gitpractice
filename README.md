@@ -1,1 +1,1 @@
-# gitpractice
+基于HarmonyOs架构ArkTs5.0版本的自研APP，功能实现较为粗糙，署名词趣无穷APP
