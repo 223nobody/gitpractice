@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.huawei.mapper.MyWrongMapper">
+    <insert id="insertWrong" parameterType="com.example.huawei.pojo.Wrong">
+        insert into wrong (word, yinbiao,translation) values (#{word}, #{yinbiao},#{translation})
+    </insert>
+    <select id="queryWrongs" resultType="com.example.huawei.pojo.Wrong">
+        select * from wrong ;
+    </select>
+    <select id="queryWrong" resultType="com.example.huawei.pojo.Wrong">
+        select * from wrong where id=#{id};
+    </select>
+    <select id="getMaxId" resultType="java.lang.Integer">
+        SELECT MAX(id) FROM wrong;
+    </select>
+</mapper>

@@ -1,0 +1,24 @@
+{
+  "src": [
+    "pages/AdminPage",
+    "pages/HomePage",
+    "pages/MimaPage",
+    "pages/ZhucePage",
+    "pages/SelectPage",
+    "pages/RememberPage",
+    "pages/AllappPage",
+    "pages/TranslatePage",
+    "pages/StorePage",
+    "pages/UserPage",
+    "pages/SettingPage",
+    "pages/WordPage",
+    "pages/MeaningPage",
+    "pages/MeaningPage2",
+    "pages/WrongPage",
+    "pages/MeaningPage3",
+    "pages/HistoryPage",
+    "pages/AllwrongPage",
+    "pages/AibinhaosiPage",
+    "pages/FinishPage"
+  ]
+}

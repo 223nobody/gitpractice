@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.huawei.mapper.MyAdminMapper">
+    <select id="queryUser" resultType="com.example.huawei.pojo.Admin">
+        select * from admin where uname=#{uname} and upass=#{upass}
+    </select>
+    <insert id="insertUser" parameterType="com.example.huawei.pojo.Admin">
+        insert into admin (uname, upass) values (#{uname}, #{upass})
+    </insert>
+    <update id="updateUser">
+        update admin set upass=#{newpass} where uname=#{admin.uname} and upass=#{admin.upass}
+    </update>
+</mapper>

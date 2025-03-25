@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.huawei.mapper.MyHistoryMapper">
+    <select id="queryHistory" resultType="com.example.huawei.pojo.History">
+        SELECT * FROM history ORDER BY id DESC ;
+    </select>
+    <insert id="insertHistory" parameterType="com.example.huawei.pojo.History">
+        insert into history (word, translation) values (#{word}, #{translation})
+    </insert>
+</mapper>
